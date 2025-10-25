@@ -3,3 +3,8 @@ export interface ITask {
     name: string;
 
 }
+
+export interface IMenuoption {
+    label: string;
+    route:string;
+}

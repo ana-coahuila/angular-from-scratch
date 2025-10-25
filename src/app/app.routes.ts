@@ -6,6 +6,8 @@ import { AttributeDirectivesPageComponent } from './pages/attribute-directives-p
 import { DataBindingPageComponent } from './pages/data-binding-page/data-binding-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { CursosPage } from './pages/cursos-page/cursos-page';
+import { Component, computed } from '@angular/core';
+import { PipesPageComponent } from './pages/pipes-page/pipes-page.component';
 
 
 export const routes: Routes = [
@@ -20,6 +22,11 @@ export const routes: Routes = [
   },{  
      path: 'service', component: ServicePageComponent
   },{
+
+    path: 'pipes',  component: PipesPageComponent
+   },
+
+  {
     path: 'Cursos', component: CursosPage
   },
    

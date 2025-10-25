@@ -36,40 +36,12 @@
           </h3>
         </div>
         <ul class="pr-12 xl:flex items-center h-full hidden font-medium">
-          <li
+          @for (menuOption of menuOptions; track $index) {
+            <li
             class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"   routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="home">Home</a>
+            <a [routerLink]="menuOption.route">{{ menuOption.label}}</a>
           </li>
-          <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="counter" routerLinkActive="router-link-active" > Counter</a>
-          </li>
-           <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="structural-directives" routerLinkActive="router-link-active" > Structural Directives</a>
-          </li>
-            <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="attribute-directives" routerLinkActive="router-link-active" > Atribute Directives</a>
-          </li>
-            <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="data-binding" routerLinkActive="router-link-active" > Data Binding</a>
-          </li>
-          <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="service" routerLinkActive="router-link-active" > Service</a>
-          </li>
-           <li
-            class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-5 tracking-normal"
-            routerLinkActive="border-b-3 border-indigo-700">
-            <a routerLink="Cursos" routerLinkActive="router-link-active" > UTVT</a>
-          </li>
+          }
         </ul>
       </div>
     </div>
