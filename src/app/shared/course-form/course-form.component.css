@@ -1,0 +1,93 @@
+/* Contenedor del formulario */
+.form-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  color: white;
+}
+
+/* Título */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Grid del formulario (2 columnas) */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Grupos de inputs */
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botón */
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background: white;
+  color: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #f3f4f6;
+  transform: scale(1.05);
+}
+
+/* Contenedor de lista */
+.list-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Tarjetas de curso */
+.curso-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+}
+
+.curso-card h3 {
+  margin: 0 0 10px;
+  color: #3b82f6;
+}

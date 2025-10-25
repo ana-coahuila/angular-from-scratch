@@ -1,0 +1,12 @@
+import { NgClass, NgStyle } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home-page',
+  imports: [],
+  templateUrl: './home-page.component.html',
+})
+
+export class HomePageComponent {
+  message: string = 'Bienvenid@ a Angular desde cero!';
+ }

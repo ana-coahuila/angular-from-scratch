@@ -1,0 +1,19 @@
+<div class="list-container">
+  <h2>📚 Cursos disponibles</h2>
+  <div class="curso-list">
+    <div class="curso-card" *ngFor="let c of cursos">
+      <h3>{{ c.name }}</h3>
+      <div class="curso-info">
+        <p><strong>Duración:</strong> {{ c.duration }} horas</p>
+        <p><strong>Nivel:</strong> {{ c.nivel }}</p>
+        <p><strong>Cuatrimestre:</strong> {{ c.cuatrimestre }}</p>
+        <p><strong>ID:</strong> {{ c.id }}</p>
+      </div>
+      <div>
+        <button class="editar">✏️ Editar</button>
+        <button class="eliminar">🗑️ Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+

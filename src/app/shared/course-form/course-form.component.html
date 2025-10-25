@@ -1,0 +1,32 @@
+<div class="form-container">
+  <h2>➕ Agregar Curso</h2>
+  <form (ngSubmit)="guardarCurso()">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>📘 Nombre del curso</label>
+        <input type="text" [(ngModel)]="curso.name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label>⏱️ Duración (horas)</label>
+        <input type="number" [(ngModel)]="curso.duration" name="duration" required>
+      </div>
+
+      <div class="form-group">
+        <label>📊 Nivel</label>
+        <select [(ngModel)]="curso.nivel" name="nivel">
+          <option>Básico</option>
+          <option>Intermedio</option>
+          <option>Avanzado</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>📅 Cuatrimestre</label>
+        <input type="number" [(ngModel)]="curso.cuatrimestre" name="cuatrimestre" required>
+      </div>
+    </div>
+
+    <button type="submit">💾 Guardar Curso</button>
+  </form>
+</div>
